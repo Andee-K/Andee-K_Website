@@ -1,0 +1,75 @@
+/* Global Styles */
+* {
+	outline: 1px dashed red !important;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: linear-gradient(to bottom right, #27374D, #526D82);
+    height: 300vh;
+    font-family: "Cormorant Garamond", serif;
+}
+
+nav {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; 
+    width: 100%;
+    height: 10vh; 
+    background-color: linear-gradient(to bottom right, #27374D, #DDE6ED);
+}
+
+.nav-elements {
+    display: flex;
+    justify-content: flex-end;
+    gap: 40px;
+    margin-right: 5vw;
+    color: #DDE6ED;
+}
+
+.nav-elements:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+#about {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+}
+
+#about h1 {
+    grid-column: 2/6;
+    grid-row: 4/7;
+    font-size: 4rem;
+}
+
+#about p {
+    grid-column: 7/12;
+    grid-row: 7/10;
+    font-size: 2rem;
+}
+
+#experience {
+    height: 100vh;
+    padding: 5vw;
+}
+
+#projects {
+    height: 100vh;
+    padding: 5vw;
+}
+
+#contact {
+    padding: 5vw;
+}
+
