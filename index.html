@@ -9,7 +9,8 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Lexend:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -23,38 +24,60 @@
     </nav>
 
     <section id="about">
-        <h1>Hi, I'm Andrew Kum</h1>
-        <p>A passionate software engineer with a focus on building scalable, impactful applications. I specialize in web development, data analytics, and machine learning. Here's a little about me and some of my work.</p>
+        <h1>Hi, I'm </h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sapien quam, sollicitudin non sagittis ac, tristique quis risus. Sed hendrerit luctus sollicitudin. Duis tempor augue lorem, a finibus odio varius ut. Donec aliquet sollicitudin nisi, nec gravida dolor ullamcorper eu.</p>
     </section>
 
     <section id="experience">
+        <h2>My Experience:</h2>
         <div class="experience-container">
-            <h2>My Experience:</h2>
-        </div>
-    </section>
+            <div id="equarius">
+                <h3>Equarius:</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sapien quam, sollicitudin non sagittis ac, tristique quis risus. Sed hendrerit luctus sollicitudin. Duis tempor augue lorem, a finibus odio varius ut. Donec aliquet sollicitudin nisi, nec gravida dolor ullamcorper eu.</p>
+            </div>
 
-    <section id="projects">
-        <div class="projects-container">
-            <h2>My Projects</h2>
-            <div class="project-list">
-                <div class="project">
-                    <h3>Project 1: Job Application Tracker</h3>
-                    <p>A tool that helps users keep track of job applications, analyze success rates, and manage progress.</p>
-                    <a href="#">View Details</a>
-                </div>
-                <div class="project">
-                    <h3>Project 2: Computational Model Visualizer</h3>
-                    <p>An interactive web application to help students understand computational models with visual aids.</p>
-                    <a href="#">View Details</a>
-                </div>
+            <div id="boranet">
+                <h3>Boranet:</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sapien quam, sollicitudin non sagittis ac, tristique quis risus. Sed hendrerit luctus sollicitudin. Duis tempor augue lorem, a finibus odio varius ut. Donec aliquet sollicitudin nisi, nec gravida dolor ullamcorper eu.</p>
             </div>
         </div>
     </section>
 
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="projects-container">
+            <button class="carousel-button left-button">&#9664;</button>
+            <div class="slides">
+                <div id="project1">
+                    <h3>MapReduce Simulator:</h3>
+                    <ul>
+                        <li>Implemented a scalable MapReduce framework using a Manager-Worker architecture, showcasing proficiency in distributed systems, fault tolerance, concurrency, and networking.</li>
+                        <li>Coordinated a distributed system using AWS to handle job distribution and manage data processing across the cluster, improving understanding of network communication.</li>
+                    </ul>
+                </div>
+                <div id="project2">
+                    <h3>MapReduce Simulator:</h3>
+                    <ul>
+                        <li>Implemented a scalable MapReduce framework using a Manager-Worker architecture, showcasing proficiency in distributed systems, fault tolerance, concurrency, and networking.</li>
+                        <li>Coordinated a distributed system using AWS to handle job distribution and manage data processing across the cluster, improving understanding of network communication.</li>
+                    </ul>
+                </div>
+                <div id="project3">
+                    <h3>MapReduce Simulator:</h3>
+                    <ul>
+                        <li>Implemented a scalable MapReduce framework using a Manager-Worker architecture, showcasing proficiency in distributed systems, fault tolerance, concurrency, and networking.</li>
+                        <li>Coordinated a distributed system using AWS to handle job distribution and manage data processing across the cluster, improving understanding of network communication.</li>
+                    </ul>
+                </div>
+            </div>
+            <button class="carousel-button right-button">&#9654;</button>
+        </div>
+    </section>
+
     <section id="contact">
+        <h2>Contact Me</h2>
         <div class="contact-container">
-            <h2>Contact Me</h2>
-            <form id="contactForm">
+            <form id="contact-form">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required>
                 
@@ -70,7 +93,8 @@
     </section>
 
     <footer>
-        <p>&copy; 2024 Andrew Kum. All Rights Reserved.</p>
+        <a href="https://github.com/Andee-K"><img src="github-mark.svg" class="filter-orange"></src></a>
+        <a href="https://www.linkedin.com/in/andrew-kum-76431a227/"><img src="linkedin-logo.svg" class="filter-orange"></src></a>
     </footer>
 
     <script src="scripts.js"></script>

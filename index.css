@@ -12,9 +12,8 @@ html {
 
 body {
     font-family: Arial, sans-serif;
-    background-image: linear-gradient(to bottom right, #27374D, #526D82);
-    height: 300vh;
-    font-family: "Cormorant Garamond", serif;
+    background-image: linear-gradient(to bottom right, #39435E, #526D82);
+    font-family: "Lexend", serif;
 }
 
 nav {
@@ -24,7 +23,12 @@ nav {
     justify-content: flex-end; 
     width: 100%;
     height: 10vh; 
-    background-color: linear-gradient(to bottom right, #27374D, #DDE6ED);
+    background-color: beige;
+    z-index: 100;
+}
+
+h1, h2, h3 {
+    font-family: "Montserrat", serif;
 }
 
 .nav-elements {
@@ -55,21 +59,121 @@ nav {
 
 #about p {
     grid-column: 7/12;
-    grid-row: 7/10;
+    grid-row: 7/11;
     font-size: 2rem;
 }
 
+.experience-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 20%;
+    height: 100%;
+    padding: 5%;
+}
+
+.experience-container p {
+    width: 90%;
+    margin: 0 auto;
+}
+
 #experience {
-    height: 100vh;
-    padding: 5vw;
+    height: 80vh;
+    padding: 5%;
 }
 
 #projects {
-    height: 100vh;
-    padding: 5vw;
+    height: 80vh;
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+}
+
+.projects-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 80%; /* Take full height of #projects */
+}
+
+.slides {
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    width: 100%;
+    height: 100%;
+}
+
+.slides > div {
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+    scroll-snap-align: start;
+    background: #74ABE2;
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+    color: white;
+    font-size: 1rem;
+}
+
+.slides ul {
+    padding: 5%;
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.left-button {
+    left: 10px;
+}
+
+.right-button {
+    right: 10px;
 }
 
 #contact {
-    padding: 5vw;
+    height: 40vh;
+    padding: 5%;
+    display: grid;
+    place-items: center;
 }
 
+.contact-container {
+    display: grid;
+    place-items: center;
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    height: 5vh;
+    padding: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2%;
+}
+
+footer img {
+    width: 40px;
+}
+
+.filter-orange {
+    filter: invert(55%) sepia(38%) saturate(644%) hue-rotate(341deg) brightness(93%) contrast(91%);
+}

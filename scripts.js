@@ -11,3 +11,9 @@ document.getElementById('contactForm').addEventListener('submit', function(event
     // Reset form fields after submission
     document.getElementById('contactForm').reset();
 });
+
+$(document).ready(function() {
+    $('.left-button').on('click', function() {
+        console.log("Button was clicked!");
+    });
+});
